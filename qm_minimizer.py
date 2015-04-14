@@ -1,19 +1,17 @@
-#------------------------
+
 #!/usr/bin/env python   
 # qm_minimizer.py       -
 # Marc Yassin           -
-# EE26 Professor Chang  -
-#                       ----------------------------------------------------------------
-# A program that implements the Quine Mcluskey method of reducing boolean functions   --
-##--------------------------------------------------------------------------------------
+# A program that implements the Quine Mcluskey method of reducing boolean functions   
+
 import math
 import itertools
 import sys
 import re
 
-#########################################################################################
+
 ###################**   Function Definitions   ##########################################
-#########################################################################################
+
 
 def __findnuminputs(some_list) : # Finds number of literals
 
@@ -416,9 +414,8 @@ def getmaxterms(mterms, dcterms, numinputs) :
 again = ["yes","yup","Y","y","yea","yeah","yess"] # i was lazy...could make reg expression to grab
 													# yes, no indicators
 	
-####################################################################################
+
 ###################**   Initialize data, variables   ###############################
-####################################################################################	
 
 print "----------------------------------------------"
 print "----   Quine Mccluskey Minimizer   -----------"
@@ -477,7 +474,7 @@ while True : # sets up repeated use of program in one exuction
 		EssentialPIs = get_EPIs(Minterms, PrimeImplicants)
 		writesolution(EssentialPIs)
 	
-		################################################################################
+		
 		################################################################################
 		
 		# Initialize and execute for POS solution
